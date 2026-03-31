@@ -21,7 +21,7 @@ public record Task(
         LocalDate deadlineDate, //дата, до которой задача дожна быть выполнена
         @NotNull
         TaskPriority priority, //приоритет задачи (Low, Medium, High)
-        LocalDateTime doneDateTime //дата со временем окончания выполнения задачи
+        LocalDateTime doneDateTime //для даты со временем окончания выполнения задачи
 ) {
         public Task {
                 doneDateTime = LocalDateTime.now();

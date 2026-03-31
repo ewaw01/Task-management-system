@@ -56,8 +56,8 @@ public class TaskService {
     }
 
     public Task createTask(Task task) {
-        if (task.id() != null) { //выбросим исключение, что клиент попытался сохранить бронирование с каким-то заданным id, так не делается, т к id задаются самим бекендом а не пользователем
-            throw new IllegalArgumentException("Id should be empty"); //нельзя задавать id клиенту
+        if (task.id() != null) {
+            throw new IllegalArgumentException("Id should be empty"); //нельзя задавать id
         }
         if(task.status() != null) {
             throw new IllegalArgumentException("Status should be empty"); //статус тоже задается системой, не клиентом

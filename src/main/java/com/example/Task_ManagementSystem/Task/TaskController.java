@@ -11,7 +11,6 @@ import org.springframework.data.domain.Page;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-//класс-контроллер, обработчик http-запросов (REST-запросов)
 @RestController
 @RequestMapping("/task")
 public class TaskController {
